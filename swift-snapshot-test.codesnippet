@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>snapshot test</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>extension &lt;# View #&gt;SnapshotTests {
+    
+    func verifyView(with count: Int,
+                    position: Int = 0,
+                    file: StaticString = #file,
+                    line: UInt = #line) {
+        
+        let viewState = &lt;#View State#&gt;ViewState(&lt;#Params#&gt;)
+        let view = &lt;#System Under Test#&gt;(viewState: viewState)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.update(&lt;#Params#&gt;)
+        
+        view.backgroundColor = .white
+        
+        FBSnapshotVerifyView(view,
+                             file: file,
+                             line: line)
+    }
+    
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D69F9409-97E6-430B-A1B7-4867FC6E2619</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Placeholder for verifying view</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Snapshot Test</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
