@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>tint image</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeExpression</string>
+		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>extension UIImage {
+    public func tint(with color: UIColor, imageSize: CGSize? = nil) -&gt; UIImage {
+        let requiredImageSize = imageSize ?? size
+
+        let image = withRenderingMode(.alwaysTemplate)
+        UIGraphicsBeginImageContextWithOptions(requiredImageSize, false, scale)
+        color.set()
+
+        image.draw(in: CGRect(origin: .zero, size: requiredImageSize))
+        guard let imageFromContext = UIGraphicsGetImageFromCurrentImageContext() else {
+            assertionFailure("Unable to retrieve tinted image")
+            return image
+        }
+        UIGraphicsEndImageContext()
+        return imageFromContext
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B1DA1215-ADAF-4005-AFD7-8DCBB0E377CF</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Return image of specified size by applying tint color</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Tint Image</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
