@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>presenter</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>final class &lt;#PresenterName#&gt;Presenter {
+private unowned let navigator: &lt;#NavigatorName#&gt;ViewNavigator
+    private let useCase: &lt;#UseCaseName#&gt;UseCase
+    private unowned let displayer: &lt;#DisplayerName#&gt;Displayer
+    private let observeScheduler: SchedulerType
+    private var disposeBag = DisposeBag()
+    
+init(navigator: &lt;#NavigatorName#&gt;ViewNavigator,
+         useCase: &lt;#UseCaseName#&gt;UseCase,
+         displayer: &lt;#DisplayerName#&gt;Displayer,
+         observeScheduler: SchedulerType = SchedulingStrategy.default) {
+        self.navigator = navigator
+        self.useCase = useCase
+        self.displayer = displayer
+        self.observeScheduler = observeScheduler
+    }
+    
+    func startPresenting() {
+        &lt;#Set Listener#&gt;
+    }
+    
+    func stopPresenting() {
+        &lt;#Reset Listener#&gt;
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4D23D0BB-53D7-4A22-895A-AC57B34101D5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Placeholder for creating presenter class</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Presenter</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
