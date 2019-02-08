@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>  let userFont = UIFontDescriptor.preferredFontDescriptor(withTextStyle: .body)
+        let userFontSize = userFont.pointSize
+        let font = UIFont(font: FontFamily.TheSun.heavyCondensed, size: userFontSize)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4554F366-7463-41A1-A800-A909B85878C6</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Custom Font with Dynamic Type </string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
